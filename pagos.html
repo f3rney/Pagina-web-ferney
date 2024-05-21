@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagos.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+   
+<header class="header">
+ <div class="menu container">
+ <a href="inicio.html" class="logo"><img src="logo.png" width="80" height="80"></a>
+
+ <input type="checkbox" id="menu"/>
+  <label for="menu">
+  <img src="icono menu.png"  class="menu-icono" alt="menu">
+ </label>
+ <nav class="navbar">
+ <h1>PAGA FACIL, RAPIDO Y SEGURO</h1>
+ </nav>
+ <div>
+  <ul>
+    <div class="usuario-carrito">
+        <a href="interfaz.html" class="btn-navbar"> <i class="fa-solid fa-circle-user"></i> </a>
+    
+  <li class="submenu">
+         <img id="img-carrito" src="icono carrito.png" width="50" height="50" alt="car">
+ <div id="carrito">
+ <table id="lista-carrito">
+ <thead>
+     <tr>
+        <th>Producto</th>
+        <th></th>
+        <th>Precio</th>
+     </thead>
+
+</table>
+<a href="#" id="vaciar-carrito" class="btn-3">Vaciar carrito</a>
+<a href="#" id="pagar" class="btn-3">Pagar</a>
+   </div>
+     </li>
+     </ul>
+      </div>
+       </div>
+       </div>
+    </div>
+       <header class="header">
+        <div class="contenedor">
+            <div class="izquierda">
+                <div class="item-pr">
+                    
+                  
+                </div>
+                <div class="item-t">
+                    <div class="titulo">METODOS DE PAGOS</div>
+                </div>
+                <a href="registro tarjeta.html">
+                    <div class="icono"><i class="logo-mastercard"></i></div>
+                    <div class="frase"></div>
+                <div class="item-s">
+                     <i class="fa-solid fa-credit-card"></i>
+                    <div class="frase-i" href="#" class="logo"><img src="logo-mastercard.png" width="100" height="50" href="#" class="logo"><img src="logo-visa.png" width="100" height="50">Pagos con tarjeta de credito</div> 
+                </div>
+                <a href="pse.html">
+                    <div class="icono"><i class="logo-pse"></i></div>
+                    <div class="frase"></div>
+                <div class="item-s">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <div class="frase-i" href="#" class="logo"><img src="logo-pse.png" width="100" height="50">Transferencia bancaria PSE</div>
+                  
+                </div>
+                <a href="efecty-baloto.html">
+                
+                <div class="icono">
+                    <i class="logo-efecty"></i>
+                               <i class="fa-solid fa-building-columns"></i>
+                    <div class="frase-i" href="#" class="logo"><img src="Logo-baloto.png" width="100" height="50" href="#" class="logo"><img src="logo-efecty.png" width="100" height="50">Redes de recaudo</div>     
+                    <a href="interfaz.html" type="submit" value="REGRESAR" class="regresar">
+                        REGRESAR
+                    </a>
+                
+                            
+                       
+                </div>
+               
+            </div>
+            <div class="derecha">
+                <div class="center" href="#" class="logo"><img src="logo-mastercard.png" width="100" height="50" href="#" class="logo"><img src="logo-visa.png" width="100" height="50"></div>
+                <form class="form-table" method="POST" action="insertar.php">
+                    <table>
+                        <tr class="titulos">
+                            <td><label>NUMERO DE LA TARJETA</label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                              
+                            <input placeholder="xxxx xxxx xxxx xxxx"      maxlength="16" required > </td>
+                        </tr>
+
+                    <tr class="titulos">
+                        <td><label>FECHA DE EXPIRACIÓN</label></td>
+                    </tr>
+                    <tr>
+                        <td><input  placeholder="MM/AA" maxlength="5"required></td>
+                    </tr>
+                        <tr class="titulos">
+                            <td><label>CVV</label></td>
+                        </tr>
+                        <tr>
+                            <td><input placeholder="Codigo de seguridad" maxlength="3"required></td>
+                        </tr>
+                        <tr class="titulos">
+                            <td><label>NOMBRE DEL TITULAR</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="txtNOMBRE DEL TITULAR" placeholder="Nombre como aparece en la tarjeta"></td>
+                        </tr>
+                        <tr class="titulos">
+                            <td><label>CORREO</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="txtCORREO" placeholder="Example@email.com"></td>
+                        </tr>
+                       
+                        <tr class="botones">
+                            <td>
+                                <a href="Pagoexitoso.html" type="submit" value="PAGAR" class="pagar">
+                                    PAGAR
+                                </a>
+                                
+                            </td>                            
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </header>
+    
+
+
+
+        
+
+        <div>
+            
+        </div>
+
+
+          
+
+      </header>
+      <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Cortana</h4>
+                    <p class="chatbox__description--header"> Cortana huila soporte al cliente en linea  </p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="./images/chatbox-icon.svg" /></button>
+        </div>
+    </div>
+</div>
+
+    <script src="app.js"></script>
+      <Footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>Productos de aseo <span> F.M Huila s.a</span></h3>
+            <p class="footer-links">
+                <a href="#">Inicio</a>
+                │
+                <a href="#">Nosotros</a>
+                │
+                <a href="#">Contactos</a>
+                │
+                <a href="#">Blog</a>
+
+            </p>  
+            <p class="footer-company-name">copyright © 2023 <strong>productos de aseo  F.M Huila S.A</strong> All rights reserved</p>  
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marked"></i>
+                <p><span>AGRADO-PITALITO-GARZÓN</span></p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>3208646374-3103033322</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="#">aseofmhuila@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-nosotros">
+                <span>Nustra Empresa</span>
+                <strong>Productos de aseo F.M Huila s.a</strong> es una compañía con más de 7 años en el mercado colombiano comercializando productos de aseo de la mas alta calidad.
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+               
+            </div>
+        </div>
+    </Footer>
+      <script src="script.js"></script>
+        </body>
+        </html>

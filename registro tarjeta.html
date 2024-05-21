@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registro tarjeta.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+    <header class="header">
+        <div class="menu container">
+            <a href="inicio.html" class="logo"><img src="logo.png" width="80" height="80"></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="icono menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+               <h1>PAGA FACIL, RAPIDO Y SEGURO</h1>
+           </nav>
+  
+                    
+                    <li class="submenu">
+                        <img id="img-carrito" src="icono carrito.png" width="50" height="50" alt="car">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>imagen</th>
+                                        <th>Nombre</th>
+                                        <th>precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-3">vaciar carrito</a>
+                        </div>
+                    </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+ 
+        
+            </a>
+           
+            <div class="card-form">
+                <div class="card-logos">
+                    <img src="logo-visa.png" alt="Visa">
+                    <img src="logo-mastercard.png" alt="Mastercard">
+             <h5>REGISTRO NUEVA TARJETA</h5>
+                </div>
+                <div class="form-group">
+                    <label for="card-number">Número de la tarjeta *</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="xxxx xxxx xxxx xxxx"
+                    maxlength="16" required > 
+                </div>
+                <div class="form-group">
+                    <label for="expiry-date">Fecha de caducidad *</label>
+                    <div class="expiry-date">
+                        <select id="expiry-month" name="expiry-month">
+                            <option value="">Mes</option>
+                            <label for="meses">Selecciona un mes:</label>
+                              <option value="1">Enero</option>
+                              <option value="2">Febrero</option>
+                              <option value="3">Marzo</option>
+                              <option value="4">Abril</option>
+                              <option value="5">Mayo</option>
+                              <option value="6">Junio</option>
+                              <option value="7">Julio</option>
+                              <option value="8">Agosto</option>
+                              <option value="9">Septiembre</option>
+                              <option value="10">Octubre</option>
+                              <option value="11">Noviembre</option>
+                              <option value="12">Diciembre</option>
+                           
+                        </select>
+                        <select id="expiry-year" name="expiry-year">
+                            <option value="">Año</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="security-code">Código de seguridad *</label>
+                    <input type="text" id="security-code" name="security-code" placeholder="CVV/CVC/CID"
+                    maxlength="3" required>
+                    <a href="#" class="security-code-info"></a>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="remember-card" name="remember-card">
+                    <label for="remember-card">Recordar esta tarjeta para su uso posterior</label>
+                </div>
+            </div>
+     
+    
+    </header>
+    <a href="pagos.html" type="submit" value="REGRESAR" class="pse">
+        REGRESAR
+    </a>
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Cortana</h4>
+                    <p class="chatbox__description--header"> Cortana huila soporte al cliente en linea  </p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="./images/chatbox-icon.svg" /></button>
+        </div>
+    </div>
+</div>
+
+    <script src="app.js"></script>
+    <Footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>Productos de aseo <span> F.M Huila s.a</span></h3>
+            <p class="footer-links">
+                <a href="#">Inicio</a>
+                │
+                <a href="#">Nosotros</a>
+                │
+                <a href="#">Contactos</a>
+                │
+                <a href="#">Blog</a>
+
+            </p>
+            <p class="footer-company-name">copyright © 2023 <strong>productos de aseo F.M Huila S.A</strong> All rights
+                reserved</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marked"></i>
+                <p><span>AGRADO-PITALITO-GARZÓN</span></p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>3208646374-3103033322</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="#">aseofmhuila@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-nosotros">
+                <span>Nustra Empresa</span>
+                <strong>Productos de aseo F.M Huila s.a</strong> es una compañía con más de 7 años en el mercado
+                colombiano comercializando productos de aseo de la mas alta calidad.
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+
+            </div>
+        </div>
+    </Footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
