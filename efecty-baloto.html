@@ -3,103 +3,183 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="efecty-baloto.css">
-    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <link
+        rel="stylesheet"
+        href="efecty-baloto.css"
+    >
+    <script
+        src="https://kit.fontawesome.com/eb496ab1a0.js"
+        crossorigin="anonymous"
+    ></script>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="style.css">
-        
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 
 </head>
 
 <body>
-  
+
     <header class="header">
         <div class="menu container">
-            <a href="inicio.html" class="logo"><img src="logo.png" width="80" height="80"></a>
-            <input type="checkbox" id="menu" />
+            <a
+                href="index.html"
+                class="logo"
+            ><img
+                    src="logo.png"
+                    width="80"
+                    height="80"
+                ></a>
+            <input
+                type="checkbox"
+                id="menu"
+            />
             <label for="menu">
-                <img src="icono menu.png" class="menu-icono" alt="menu">
+                <img
+                    src="icono menu.png"
+                    class="menu-icono"
+                    alt="menu"
+                >
             </label>
             <nav class="navbar">
-               <h1>PAGA FACIL, RAPIDO Y SEGURO</h1>
-           </nav>
-  
-                    
-                    <li class="submenu">
-                        <img id="img-carrito" src="icono carrito.png" width="50" height="50" alt="car">
-                        <div id="carrito">
-                            <table id="lista-carrito">
-                                <thead>
-                                    <tr>
-                                        <th>imagen</th>
-                                        <th>Nombre</th>
-                                        <th>precio</th>
-                                    </tr>
-                                </thead>
-                                <tbody></tbody>
+                <h1>PAGA FACIL, RAPIDO Y SEGURO</h1>
+            </nav>
 
-                            </table>
-                            <a href="#" id="vaciar-carrito" class="btn-3">vaciar carrito</a>
-                        </div>
-                    </li>
-                    </div>
-                </ul>
-            </div>
+
+            <li class="submenu">
+                <img
+                    id="img-carrito"
+                    src="icono carrito.png"
+                    width="50"
+                    height="50"
+                    alt="car"
+                >
+                <div id="carrito">
+                    <table id="lista-carrito">
+                        <thead>
+                            <tr>
+                                <th>imagen</th>
+                                <th>Nombre</th>
+                                <th>precio</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+
+                    </table>
+                    <a
+                        href="#"
+                        id="vaciar-carrito"
+                        class="btn-3"
+                    >vaciar carrito</a>
+                </div>
+            </li>
         </div>
-        
+        </ul>
+        </div>
+        </div>
+
         <div class="container">
             <div class="imagen-efecty">
-                <img src="logo-efecty.png" alt="efecty" width="150" height="150">
+                <img
+                    src="logo-efecty.png"
+                    alt="efecty"
+                    width="150"
+                    height="150"
+                >
             </div>
             <div class="container">
                 <div class="imagen-baloto">
-                    <img src="Logo-baloto.png" alt="baloto" width="150" height="150">
+                    <img
+                        src="Logo-baloto.png"
+                        alt="baloto"
+                        width="150"
+                        height="150"
+                    >
                 </div>
-            </a>
-            <form>
-                
-                <label for="convenio">Seleccionar Convenio</label>
-                <select id="convenio" id="Seleccionar-convenio">
-                    <option value="">Seleccione convenio</option>
-                    <option value="Efecty">Efecty</option>
-                    <option value="Baloto">Baloto</option>
-                </select> 
-                
-                <label for="numero-pago">Número de Pago</label>
-                <input type="text" id="numero-pago" name="numero-pago" required>
-        
-                <label for="total-pagar">Total a Pagar</label>
-                <input type="number" id="total-pagar" name="total-pagar" step="0.01" required>
-        
-                <label for="fecha-pago">Paga antes de</label>
-                <input type="date" id="fecha-pago" name="fecha-pago" required>
-        
-                
-        
-            
+                </a>
+                <form>
+
+                    <label for="convenio">Seleccionar Convenio</label>
+                    <select
+                        id="convenio"
+                        id="Seleccionar-convenio"
+                    >
+                        <option value="">Seleccione convenio</option>
+                        <option value="Efecty">Efecty</option>
+                        <option value="Baloto">Baloto</option>
+                    </select>
+
+                    <label for="numero-pago">Número de Pago</label>
+                    <input
+                        type="text"
+                        id="numero-pago"
+                        name="numero-pago"
+                        required
+                    >
+
+                    <label for="total-pagar">Total a Pagar</label>
+                    <input
+                        type="number"
+                        id="total-pagar"
+                        name="total-pagar"
+                        step="0.01"
+                        required
+                    >
+
+                    <label for="fecha-pago">Paga antes de</label>
+                    <input
+                        type="date"
+                        id="fecha-pago"
+                        name="fecha-pago"
+                        required
+                    >
+
+
+
+
     </header>
-    <a href="pagos.html" type="submit" value="REGRESAR" class="pse">
+    <a
+        href="pagos.html"
+        type="submit"
+        value="REGRESAR"
+        class="pse"
+    >
         REGRESAR
     </a>
     <div class="chatbox">
         <div class="chatbox__support">
             <div class="chatbox__header">
                 <div class="chatbox__image--header">
-                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                    <img
+                        src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png"
+                        alt="image"
+                    >
                 </div>
                 <div class="chatbox__content--header">
                     <h4 class="chatbox__heading--header">Cortana</h4>
-                    <p class="chatbox__description--header"> Cortana huila soporte al cliente en linea  </p>
+                    <p class="chatbox__description--header"> Cortana huila soporte al cliente en linea </p>
                 </div>
             </div>
             <div class="chatbox__messages">
                 <div></div>
             </div>
             <div class="chatbox__footer">
-                <input type="text" placeholder="Write a message...">
+                <input
+                    type="text"
+                    placeholder="Write a message..."
+                >
                 <button class="chatbox__send--footer send__button">Send</button>
             </div>
         </div>
@@ -107,7 +187,7 @@
             <button><img src="./images/chatbox-icon.svg" /></button>
         </div>
     </div>
-</div>
+    </div>
 
     <script src="app.js"></script>
     <Footer class="footer-distributed">

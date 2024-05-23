@@ -3,12 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos/inicio de sesion.css">
-    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <link
+        rel="stylesheet"
+        href="./estilos/inicio de sesion.css"
+    >
+    <script
+        src="https://kit.fontawesome.com/eb496ab1a0.js"
+        crossorigin="anonymous"
+    ></script>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
 
 </head>
 
@@ -16,45 +29,92 @@
 
     <header class="header">
         <div class="menu container">
-            <a href="inicio.html" class="logo"><img src="logo.png" width="80" height="80"></a>
-            <input type="checkbox" id="menu" />
+            <a
+                href="index.html"
+                class="logo"
+            ><img
+                    src="logo.png"
+                    width="80"
+                    height="80"
+                ></a>
+            <input
+                type="checkbox"
+                id="menu"
+            />
             <label for="menu">
-                <img src="icono menu.png" class="menu-icono" alt="menu">
+                <img
+                    src="icono menu.png"
+                    class="menu-icono"
+                    alt="menu"
+                >
             </label>
             <nav class="navbar">
                 <ul>
-                    <li><a href="iniciar sesion.html" class="active" onclick="irAIniciarSesion()">Iniciar Sesión</a>
+                    <li><a
+                            href="iniciar sesion.html"
+                            class="active"
+                            onclick="irAIniciarSesion()"
+                        >Iniciar Sesión</a>
                     </li>
-                    <li><a href="#" onclick="irANosotros()">Nosotros</a></li>
-                    <li><a href="productos.html" onclick="irAProductos()">Productos</a></li>
-                    <li><a href="contacto.html" onclick="irAContacto()">Contacto</a></li>
-                    <li><a href="#" onclick="irARegistro()">Registro</a></li>
+                    <li><a
+                            href="#"
+                            onclick="irANosotros()"
+                        >Nosotros</a></li>
+                    <li><a
+                            href="productos.html"
+                            onclick="irAProductos()"
+                        >Productos</a></li>
+                    <li><a
+                            href="contacto.html"
+                            onclick="irAContacto()"
+                        >Contacto</a></li>
+                    <li><a
+                            href="#"
+                            onclick="irARegistro()"
+                        >Registro</a></li>
 
                 </ul>
             </nav>
             <div>
                 <ul>
                     <div class="usuario-carrito">
-                        <a href="interfaz.html" class="btn-navbar"> <i class="fa-solid fa-circle-user"></i> </a>
-                    
-                    <li class="submenu">
-                        <img id="img-carrito" src="icono carrito.png" width="50" height="50" alt="car">
-                        <div id="carrito">
-                            <table id="lista-carrito">
-                                <thead>
-                                    <tr>
-                                        <th>Producto</th>
-                                        <th></th>
-                                        <th>Precio</th>
-                                    </tr>
-                                </thead>
-                                <tbody></tbody>
+                        <a
+                            href="interfaz.html"
+                            class="btn-navbar"
+                        > <i class="fa-solid fa-circle-user"></i> </a>
 
-                            </table>
-                            <a href="#" id="vaciar-carrito" class="btn-3">Vaciar carrito</a>
-                            <a href="#" id="vaciar-carrito" class="btn-3">Pagar</a>
-                        </div>
-                    </li>
+                        <li class="submenu">
+                            <img
+                                id="img-carrito"
+                                src="icono carrito.png"
+                                width="50"
+                                height="50"
+                                alt="car"
+                            >
+                            <div id="carrito">
+                                <table id="lista-carrito">
+                                    <thead>
+                                        <tr>
+                                            <th>Producto</th>
+                                            <th></th>
+                                            <th>Precio</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+
+                                </table>
+                                <a
+                                    href="#"
+                                    id="vaciar-carrito"
+                                    class="btn-3"
+                                >Vaciar carrito</a>
+                                <a
+                                    href="#"
+                                    id="vaciar-carrito"
+                                    class="btn-3"
+                                >Pagar</a>
+                            </div>
+                        </li>
                     </div>
                 </ul>
             </div>
@@ -73,23 +133,34 @@
                     <table>
                         <h3>¡Muchas gracias por su compra!</h3>
                         <h2>Pago realizado con exito</h2>
-                        <form method="POST" action="insertar.php">
+                        <form
+                            method="POST"
+                            action="insertar.php"
+                        >
 
                             <tr>
-                                <input type="text" placeholder="Comprobante de pago #11111" id="username">
+                                <input
+                                    type="text"
+                                    placeholder="Comprobante de pago #11111"
+                                    id="username"
+                                >
                             </tr>
-                            
-                            
+
+
                             <tr>
                                 <td>
-                                <td><input type="button" value="Realizar otra compra" onclick="irAProductos ()"></td>
+                                <td><input
+                                        type="button"
+                                        value="Realizar otra compra"
+                                        onclick="irAProductos ()"
+                                    ></td>
                             </tr>
-                                <tr>
-                                    
-                                </tr>
-                                <tr>
-                                 
-                                </tr>    
+                            <tr>
+
+                            </tr>
+                            <tr>
+
+                            </tr>
                     </table>
                 </form>
 
@@ -101,7 +172,10 @@
             <p class="footer-links">
             <ul>
 
-                <li></li><a href="inicio.html" onclick="irInicio()">Inicio</a>
+                <li></li><a
+                    href="index.html"
+                    onclick="irInicio()"
+                >Inicio</a>
                 │
                 <a href="#">Nosotros</a>
                 │
