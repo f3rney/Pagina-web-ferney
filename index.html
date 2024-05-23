@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <link
+        rel="stylesheet"
+        href="./estilos/inicio.css"
+    >
+    <script
+        src="https://kit.fontawesome.com/eb496ab1a0.js"
+        crossorigin="anonymous"
+    ></script>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link
+        rel="stylesheet"
+        href="./css/style.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./css/productos.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./css/pedido.css"
+    >
+</head>
+
+<body>
+
+    <main class="main">
+        <!-- replicar en las otras paginas este nav -->
+        <nav class="menu">
+            <a
+                href="/"
+                class="logo"
+            ><img
+                    src="/images/logo.png"
+                    width="80"
+                    height="80"
+                ></a>
+            <input
+                type="checkbox"
+                id="menu"
+            />
+            <label for="menu">
+                <img
+                    src="images/icono menu.png"
+                    class="menu-icono"
+                    alt="menu"
+                >
+            </label>
+            <div class="navbar">
+                <ul>
+                    <li><a
+                            href="iniciar_sesion.html"
+                            class="active"
+                        >Iniciar Sesión</a>
+                    </li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <div class="usuario-carrito">
+                        <a
+                            href="interfaz.html"
+                            class="btn-navbar"
+                        > <i class="fa-solid fa-circle-user"></i> </a>
+
+                        <li class="submenu">
+                            <img
+                                id="img-carrito"
+                                src="images/icono carrito.png"
+                                width="50"
+                                height="50"
+                                alt="car"
+                            >
+                            <div id="carrito">
+                                <table id="lista-carrito">
+                                    <thead>
+                                        <tr>
+                                            <th>imagen</th>
+                                            <th>Nombre</th>
+                                            <th>precio</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+
+                                </table>
+                                <div class="submenu-buttons">
+                                    <button
+                                        href="#"
+                                        id="vaciar-carrito"
+                                        class="btn-3"
+                                    >vaciar carrito</button>
+                                    <span id="cantidadProductos"></span>
+                                    <span id="totalPrecio"></span>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <header>
+            <div class="header-container">
+                <div class="container">
+                    <h1>BIENVENIDOS</h1>
+                    <H2>Productos de aseo F.M Huila s.a</H2>
+                    <p>LIMPIEZA CON CONCIENCIA PRODUCTOS ECOLÓGICOS</p>
+                    <a href="productos.html">DESCUBRELOS</a>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="container">
+                <h2>PRODUCTOS</h2>
+
+                <div
+                    class="box-container"
+                    id="lista-1"
+                >
+
+                    <div class="box">
+                        <img
+                            src="images/Imagen1.png"
+                            alt=""
+                        >
+                        <div class="product-txt">
+                            <h4>Limpia Pisos</h4>
+                            <p class="precio"><b>Precio:</b> $25.000</p>
+                            <button
+                                href="#"
+                                class="agregar-carrito btn-3"
+                                data-id="1"
+                            >Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img
+                            src="images/Imagen2.png"
+                            alt=""
+                        >
+                        <div class="product-txt">
+                            <h4>Cera Emulcionada</h4>
+                            <p class="precio"><b>Precio:</b> $30.000
+                            </p>
+                            <a
+                                href="#"
+                                class="agregar-carrito btn-3"
+                                data-id="2"
+                            >Agregar al carrito</a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img
+                            src="images/Imagen3.png"
+                            alt=""
+                        >
+                        <div class="product-txt">
+                            <h4>Silicona Liquida</h4>
+                            <p></p>
+                            <p class="precio"><b>Precio:</b> $90.000</p>
+                            <a
+                                href="#"
+                                class="agregar-carrito btn-3"
+                                data-id="3"
+                            >Agregar al carrito</a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="box">
+                        <img
+                            src="images/Imagen4.png"
+                            alt=""
+                        >
+                        <div class="product-txt">
+                            <h4>Jabon Labaloza</h4>
+                            <p class="precio"><b>Precio:</b> $45.000</p>
+                            <a
+                                href="#"
+                                class="agregar-carrito btn-3"
+                                data-id="4"
+                            >Agregar al carrito</a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="box">
+                        <img
+                            src="images/Imagen5.png"
+                            alt=""
+                        >
+                        <div class="product-txt">
+                            <h4>Blanqueador</h4>
+                            <p class="precio"><b>Precio:</b> $65.000</p>
+                            <a
+                                href="#"
+                                class="agregar-carrito btn-3"
+                                data-id="5"
+                            >Agregar al carrito</a>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <a
+                        href="productos.html"
+                        class="btn btn-see-more"
+                    >Ver más</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    </div>
+    <Footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>Productos de aseo <span> F.M Huila s.a</span></h3>
+            <p class="footer-links">
+                <a href="/">Inicio</a>
+                │
+                <a href="nosotros.html">Nosotros</a>
+                │
+                <a href="contacto.html">Contactos</a>
+            </p>
+            <p class="footer-company-name">copyright ©
+                <span class="year"></span> <strong>productos de aseo F.M Huila S.A</strong> All rights
+                reserved
+            </p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marked"></i>
+                <p><span>AGRADO-PITALITO-GARZÓN</span></p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>3208646374-3103033322</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="#">aseofmhuila@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-nosotros">
+                <span class="company">Nustra Empresa</span>
+                <strong>Productos de aseo F.M Huila s.a</strong> es una compañía con más de 7 años en el mercado
+                colombiano comercializando productos de aseo de la mas alta calidad.
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+
+            </div>
+        </div>
+    </Footer>
+    <!-- <script src="app.js"></script> -->
+    <script
+        src="js/script.js"
+        crossorigin="anonymous"
+    ></script>
+    <script>
+        document.querySelector('.year').textContent = new Date().getFullYear();
+        document.querySelector('.company').textContent = "Nustra Empresa cambio"
+    </script>
+</body>
+
+</html>

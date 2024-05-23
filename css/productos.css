@@ -1,0 +1,35 @@
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .box-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  align-items: center;
+  background: white;
+  border-radius: 6px;
+}
+
+.product-txt {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: 0.3s all;
+}
+
+.product-txt a {
+  transition: 0.3s all;
+}
+
+.box:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

@@ -3,38 +3,90 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="PQRS.css">
-    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <link
+        rel="stylesheet"
+        href="PQRS.css"
+    >
+    <script
+        src="https://kit.fontawesome.com/eb496ab1a0.js"
+        crossorigin="anonymous"
+    ></script>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
 </head>
 
 <body>
 
     <header class="header">
         <div class="menu container">
-            <a href="#" class="logo"><img src="logo.png" width="80" height="80"></a>
-            <input type="checkbox" id="menu" />
+            <a
+                href="#"
+                class="logo"
+            ><img
+                    src="logo.png"
+                    width="80"
+                    height="80"
+                ></a>
+            <input
+                type="checkbox"
+                id="menu"
+            />
             <label for="menu">
-                <img src="icono menu.png" class="menu-icono" alt="menu">
+                <img
+                    src="icono menu.png"
+                    class="menu-icono"
+                    alt="menu"
+                >
             </label>
             <nav class="navbar">
                 <ul>
-                    <li><a href="iniciar sesion.html" class="active" onclick="irAIniciarSesion()">Iniciar Sesión</a></li>
-                    <li><a href="#" onclick="irANosotros()">Nosotros</a></li>
-                    <li><a href="productos.html" onclick="irAProductos()">Productos</a></li>
-                    <li><a href="contacto.html" onclick="irAContacto()">Contacto</a></li>
-                    <li><a href="registro.html" onclick="irARegistro()">Registro</a></li>
+                    <li><a
+                            href="iniciar sesion.html"
+                            class="active"
+                            onclick="irAIniciarSesion()"
+                        >Iniciar Sesión</a></li>
+                    <li><a
+                            href="#"
+                            onclick="irANosotros()"
+                        >Nosotros</a></li>
+                    <li><a
+                            href="productos.html"
+                            onclick="irAProductos()"
+                        >Productos</a></li>
+                    <li><a
+                            href="contacto.html"
+                            onclick="irAContacto()"
+                        >Contacto</a></li>
+                    <li><a
+                            href="registro.html"
+                            onclick="irARegistro()"
+                        >Registro</a></li>
                 </ul>
             </nav>
             <div>
                 <ul>
                     <div class="usuario-carrito">
-                        <a href="interfaz.html" class="btn-navbar"><i class="fa-solid fa-circle-user"></i></a>
+                        <a
+                            href="interfaz.html"
+                            class="btn-navbar"
+                        ><i class="fa-solid fa-circle-user"></i></a>
                         <li class="submenu">
-                            <img id="img-carrito" src="icono carrito.png" width="50" height="50" alt="car">
+                            <img
+                                id="img-carrito"
+                                src="icono carrito.png"
+                                width="50"
+                                height="50"
+                                alt="car"
+                            >
                             <div id="carrito">
                                 <table id="lista-carrito">
                                     <thead>
@@ -46,8 +98,16 @@
                                     </thead>
                                     <tbody></tbody>
                                 </table>
-                                <a href="#" id="vaciar-carrito" class="btn-3">vaciar carrito</a>
-                                <a href="#" id="vaciar-carrito" class="btn-3">Ir al carrito</a>
+                                <a
+                                    href="#"
+                                    id="vaciar-carrito"
+                                    class="btn-3"
+                                >vaciar carrito</a>
+                                <a
+                                    href="#"
+                                    id="vaciar-carrito"
+                                    class="btn-3"
+                                >Ir al carrito</a>
                             </div>
                         </li>
                         <li>
@@ -63,34 +123,70 @@
         <div class="form-container">
             <div class="pqrs-description">
                 <h2>¿Qué son las PQRS?</h2>
-                <p>Las PQRS (Peticiones, Quejas, Reclamos y Sugerencias) son un mecanismo que permite a nuestros clientes
+                <p>Las PQRS (Peticiones, Quejas, Reclamos y Sugerencias) son un mecanismo que permite a nuestros
+                    clientes
                     comunicarse con nosotros para expresar sus inquietudes, inconformidades, reclamaciones o sugerencias
                     relacionadas con nuestros productos y servicios. Este espacio nos ayuda a mejorar continuamente y a
                     brindar un mejor servicio.
 
-                </p>  
+                </p>
 
-                     <img src="pqrs.png" alt="Descripción de la imagen" />
+                <img
+                    src="pqrs.png"
+                    alt="Descripción de la imagen"
+                />
             </div>
-            <form id="formulario-pqrs" class="formulario-pqrs">
+            <form
+                id="formulario-pqrs"
+                class="formulario-pqrs"
+            >
                 <h2>PQRS</h2>
                 <label for="nombres">Nombres:</label>
-                <input type="text" id="nombres" name="nombres" required>
+                <input
+                    type="text"
+                    id="nombres"
+                    name="nombres"
+                    required
+                >
 
                 <label for="apellidos">Apellidos:</label>
-                <input type="text" id="apellidos" name="apellidos" required>
+                <input
+                    type="text"
+                    id="apellidos"
+                    name="apellidos"
+                    required
+                >
 
                 <label for="cedula">Cédula:</label>
-                <input type="text" id="cedula" name="cedula" required>
+                <input
+                    type="text"
+                    id="cedula"
+                    name="cedula"
+                    required
+                >
 
                 <label for="correo">Correo Electrónico:</label>
-                <input type="email" id="correo" name="correo" required>
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    required
+                >
 
                 <label for="celular">Celular:</label>
-                <input type="text" id="celular" name="celular" required>
+                <input
+                    type="text"
+                    id="celular"
+                    name="celular"
+                    required
+                >
 
                 <label for="tipo-solicitud">Tipo de Solicitud:</label>
-                <select id="tipo-solicitud" name="tipo-solicitud" required>
+                <select
+                    id="tipo-solicitud"
+                    name="tipo-solicitud"
+                    required
+                >
                     <option value="">Seleccione...</option>
                     <option value="1">Petición</option>
                     <option value="2">Queja</option>
@@ -99,7 +195,11 @@
                 </select>
 
                 <label for="descripcion">Descripción:</label>
-                <textarea id="descripcion" name="descripcion" required></textarea>
+                <textarea
+                    id="descripcion"
+                    name="descripcion"
+                    required
+                ></textarea>
 
                 <button type="submit">Enviar</button>
             </form>
@@ -110,18 +210,21 @@
         <div class="footer-left">
             <h3>Productos de aseo<span> F.M Huila s.a</span></h3>
             <p class="footer-links">
-                <ul>
+            <ul>
 
-                    <li></li><a href="inicio.html" onclick="irInicio()">Inicio</a>
-                    │
-                    <a href="#">Nosotros</a>
-                    │
-                    <a href="#">Contactos</a>
-                    │
-                    <a href="#">Blog</a>
-                    │
-                    <a href="#">Pqrs</a>
-                </ul>
+                <li></li><a
+                    href="index.html"
+                    onclick="irInicio()"
+                >Inicio</a>
+                │
+                <a href="#">Nosotros</a>
+                │
+                <a href="#">Contactos</a>
+                │
+                <a href="#">Blog</a>
+                │
+                <a href="#">Pqrs</a>
+            </ul>
             </p>
             <p class="footer-company-name">copyright © 2023 <strong>productos de aseo F.M Huila S.A</strong> All rights
                 reserved</p>

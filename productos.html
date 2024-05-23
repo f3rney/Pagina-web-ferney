@@ -3,248 +3,392 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos/productos.css">
-    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <link
+        rel="stylesheet"
+        href="./estilos/productos.css"
+    >
+    <script
+        src="https://kit.fontawesome.com/eb496ab1a0.js"
+        crossorigin="anonymous"
+    ></script>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="style.css">
-
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link
+        rel="stylesheet"
+        href="/css/style.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./css/productos.css"
+    >
 
 <body>
 
     <header class="header">
-        <div class="menu container">
-            <a href="inicio.html" class="logo"><img src="logo.png" width="80" height="80"></a>
-            <input type="checkbox" id="menu" />
+        <nav class="menu">
+            <a
+                href="/"
+                class="logo"
+            ><img
+                    src="/images/logo.png"
+                    width="80"
+                    height="80"
+                ></a>
+            <input
+                type="checkbox"
+                id="menu"
+            />
             <label for="menu">
-                <img src="icono menu.png" class="menu-icono" alt="menu">
+                <img
+                    src="images/icono menu.png"
+                    class="menu-icono"
+                    alt="menu"
+                >
             </label>
-            <nav class="navbar">
+            <div class="navbar">
                 <ul>
-                    <li><a href="iniciar sesion.html" class="active" onclick="irAIniciarSesion()">Iniciar Sesión</a>
+                    <li><a
+                            href="iniciar_sesion.html"
+                            class="active"
+                        >Iniciar Sesión</a>
                     </li>
-                    <li><a href="#" onclick="irANosotros()">Nosotros</a></li>
-                    <li><a href="productos.html" onclick="irAProductos()">Productos</a></li>
-                    <li><a href="contacto.html" onclick="irAContacto()">Contacto</a></li>
-                    <li><a href="registro.html" onclick="irARegistro()">Registro</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="registro.html">Registro</a></li>
 
                 </ul>
-            </nav>
+            </div>
             <div>
                 <ul>
                     <div class="usuario-carrito">
-                        <a href="interfaz.html" class="btn-navbar"> <i class="fa-solid fa-circle-user"></i> </a>
-                    
-                    <li class="submenu">
+                        <a
+                            href="interfaz.html"
+                            class="btn-navbar"
+                        > <i class="fa-solid fa-circle-user"></i> </a>
 
-                        <img id="img-carrito" src="icono carrito.png" width="50" height="50" alt="car">
-                        <div id="carrito">
-                            <table id="lista-carrito">
+                        <li class="submenu">
+                            <img
+                                id="img-carrito"
+                                src="images/icono carrito.png"
+                                width="50"
+                                height="50"
+                                alt="car"
+                            >
+                            <div id="carrito">
+                                <table id="lista-carrito">
+                                    <thead>
+                                        <tr>
+                                            <th>imagen</th>
+                                            <th>Nombre</th>
+                                            <th>precio</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
 
-
-                                <thead>
-
-                                    <tr>
-                                        <th>Producto</th>
-                                        <th></th>
-                                        <th>Precio</th>
-                                    </tr>
-                                </thead>
-                                <tbody></tbody>
-
-                            </table>
-                            <a href="#" id="vaciar-carrito" class="btn-3">Vaciar carrito</a>
-                            <a href="pagos.html" id="pagar" class="btn-3">Pagar</a>
-                        </div>
-                    </li>
-                    <li>
-                        <span id="cantidad de Productos"></span>
-                    </li>
+                                </table>
+                                <a
+                                    href="#"
+                                    id="vaciar-carrito"
+                                    class="btn-3"
+                                >vaciar carrito</a>
+                                <span id="cantidadProductos"></span>
+                                <span id="totalPrecio"></span>
+                            </div>
+                        </li>
                     </div>
                 </ul>
             </div>
-        </div>
-
-
-        </div>
-        <section>
-
-            <main class="products container">
-
-                <h2>PRODUCTOS</h2>
-
-                <div class="box-container" id="lista-1">
-
-                    <div class="box">
-                        <img src="Imagen1.png" alt="">
-                        <div class="product-txt">
-                            <h4>Limpia Pisos</h4>
-                            <P class="precio">$25.000</P>
-                            <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img src="Imagen2.png" alt="">
-                        <div class="product-txt">
-                            <h4>Cera Emulcionada</h4>
-                            <P class="precio">$30.000</P>
-                            <a href="#" class="agregar-carrito btn-3" data-id="2">Agregar al carrito</a>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <img src="Imagen3.png" alt="">
-                        <div class="product-txt">
-                            <h4>Silicona Liquida</h4>
-                            <P class="precio">$90.000</P>
-                            <a href="#" class="agregar-carrito btn-3" data-id="3">Agregar al carrito</a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="box">
-                        <img src="Imagen4.png" alt="">
-                        <div class="product-txt">
-                            <h4>Jabon Labaloza</h4>
-                            <P class="precio">$45.000</P>
-                            <a href="#" class="agregar-carrito btn-3" data-id="4">Agregar al carrito</a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="box">
-                        <img src="Imagen5.png" alt="">
-                        <div class="product-txt">
-                            <h4>Blanqueador</h4>
-                            <P class="precio">$65.000</P>
-                            <a href="#" class="agregar-carrito btn-3" data-id="5">Agregar al carrito</a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="box">
-                        <img src="Imagen6.png" alt="">
-                        <div class="product-txt">
-                            <h4>Prelavado</h4>
-                            <P class="precio">$38.000</P>
-                            <a href="#" class="agregar-carrito btn-3" data-id="6">Agregar al carrito</a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="box">
-                        <img src="Imagen7.png" alt="">
-                        <div class="product-txt">
-                            <h4>Suavizante</h4>
-                            <P class="precio">$36.000</P>
-                            <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar al carrito</a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="box">
-                        <img src="Imagen8.png" alt="">
-                        <div class="product-txt">
-                            <h4>Detergente Multiusos</h4>
-                            <P class="precio">$77.000</P>
-                            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="box">
-                        <img src="Imagen9.png" alt="">
-                        <div class="product-txt">
-                            <h4>Ambientador</h4>
-                            <P class="precio">$25.000</P>
-                            <a href="#" class="agregar-carrito btn-3" data-id="9">Agregar al carrito</a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="box">
-                        <img src="Imagen10.png" alt="">
-                        <div class="product-txt">
-                            <h4>Jabon de Manos</h4>
-                            <P class="precio">$42.000</P>
-                            <a href="#" class="agregar-carrito btn-3" data-id="10">Agregar al carrito</a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="box">
-                        <img src="Imagen11.png" alt="">
-                        <div class="product-txt">
-                            <h4>Locion</h4>
-                            <P class="precio">$19.000</P>
-                            <a href="#" class="agregar-carrito btn-3" data-id="11">Agregar al carrito</a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="box">
-                        <img src="Imagen12.png" alt="">
-                        <div class="product-txt">
-                            <h4>Veneno</h4>
-                            <P class="precio">$36.000</P>
-                            <a href="#" class="agregar-carrito btn-3" data-id="12">Agregar al carrito</a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="box">
-                        <img src="Imagen13.png" alt="">
-                        <div class="product-txt">
-                            <h4>Limpia Vidrios</h4>
-                            <P class="precio">$65.000</P>
-                            <a href="#" class="agregar-carrito btn-3" data-id="13">Agregar al carrito</a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="box">
-                        <img src="Imagen14.png" alt="">
-                        <div class="product-txt">
-                            <h4>Pastas Blanqueador</h4>
-                            <P class="precio">$15.000</P>
-                            <a href="#" class="agregar-carrito btn-3" data-id="14">Agregar al carrito</a>
-
-                        </div>
-
-
-
-        </section>
-
+        </nav>
     </header>
+    <main class="products container">
+        <section>
+            <h2>PRODUCTOS</h2>
+
+            <div
+                class="box-container"
+                id="lista-1"
+            >
+
+                <div class="box">
+                    <img
+                        src="images/Imagen1.png"
+                        alt=""
+                    >
+                    <div class="product-txt">
+                        <h4>Limpia Pisos</h4>
+                        <p class="precio"><b>Precio:</b> $25.000</p>
+                        <button
+                            class="agregar-carrito btn-3"
+                            data-id="1"
+                        >Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img
+                        src="images/Imagen2.png"
+                        alt=""
+                    >
+                    <div class="product-txt">
+                        <h4>Cera Emulcionada</h4>
+                        <P class="precio">$30.000</P>
+                        <a
+                            href="#"
+                            class="agregar-carrito btn-3"
+                            data-id="2"
+                        >Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img
+                        src="images/Imagen3.png"
+                        alt=""
+                    >
+                    <div class="product-txt">
+                        <h4>Silicona Liquida</h4>
+                        <P class="precio">$90.000</P>
+                        <a
+                            href="#"
+                            class="agregar-carrito btn-3"
+                            data-id="3"
+                        >Agregar al carrito</a>
+
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <img
+                        src="images/Imagen4.png"
+                        alt=""
+                    >
+                    <div class="product-txt">
+                        <h4>Jabon Labaloza</h4>
+                        <P class="precio">$45.000</P>
+                        <a
+                            href="#"
+                            class="agregar-carrito btn-3"
+                            data-id="4"
+                        >Agregar al carrito</a>
+
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <img
+                        src="images/Imagen5.png"
+                        alt=""
+                    >
+                    <div class="product-txt">
+                        <h4>Blanqueador</h4>
+                        <P class="precio">$65.000</P>
+                        <a
+                            href="#"
+                            class="agregar-carrito btn-3"
+                            data-id="5"
+                        >Agregar al carrito</a>
+
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <img
+                        src="images/Imagen6.png"
+                        alt=""
+                    >
+                    <div class="product-txt">
+                        <h4>Prelavado</h4>
+                        <P class="precio">$38.000</P>
+                        <a
+                            href="#"
+                            class="agregar-carrito btn-3"
+                            data-id="6"
+                        >Agregar al carrito</a>
+
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <img
+                        src="images/Imagen7.png"
+                        alt=""
+                    >
+                    <div class="product-txt">
+                        <h4>Suavizante</h4>
+                        <P class="precio">$36.000</P>
+                        <a
+                            href="#"
+                            class="agregar-carrito btn-3"
+                            data-id="7"
+                        >Agregar al carrito</a>
+
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <img
+                        src="images/Imagen8.png"
+                        alt=""
+                    >
+                    <div class="product-txt">
+                        <h4>Detergente Multiusos</h4>
+                        <P class="precio">$77.000</P>
+                        <a
+                            href="#"
+                            class="agregar-carrito btn-3"
+                            data-id="8"
+                        >Agregar al carrito</a>
+
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <img
+                        src="images/Imagen9.png"
+                        alt=""
+                    >
+                    <div class="product-txt">
+                        <h4>Ambientador</h4>
+                        <P class="precio">$25.000</P>
+                        <a
+                            href="#"
+                            class="agregar-carrito btn-3"
+                            data-id="9"
+                        >Agregar al carrito</a>
+
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <img
+                        src="images/Imagen10.png"
+                        alt=""
+                    >
+                    <div class="product-txt">
+                        <h4>Jabon de Manos</h4>
+                        <P class="precio">$42.000</P>
+                        <a
+                            href="#"
+                            class="agregar-carrito btn-3"
+                            data-id="10"
+                        >Agregar al carrito</a>
+
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <img
+                        src="images/Imagen11.png"
+                        alt=""
+                    >
+                    <div class="product-txt">
+                        <h4>Locion</h4>
+                        <P class="precio">$19.000</P>
+                        <a
+                            href="#"
+                            class="agregar-carrito btn-3"
+                            data-id="11"
+                        >Agregar al carrito</a>
+
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <img
+                        src="images/Imagen12.png"
+                        alt=""
+                    >
+                    <div class="product-txt">
+                        <h4>Veneno</h4>
+                        <P class="precio">$36.000</P>
+                        <a
+                            href="#"
+                            class="agregar-carrito btn-3"
+                            data-id="12"
+                        >Agregar al carrito</a>
+
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <img
+                        src="images/Imagen13.png"
+                        alt=""
+                    >
+                    <div class="product-txt">
+                        <h4>Limpia Vidrios</h4>
+                        <P class="precio">$65.000</P>
+                        <a
+                            href="#"
+                            class="agregar-carrito btn-3"
+                            data-id="13"
+                        >Agregar al carrito</a>
+
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <img
+                        src="images/Imagen14.png"
+                        alt=""
+                    >
+                    <div class="product-txt">
+                        <h4>Pastas Blanqueador</h4>
+                        <P class="precio">$15.000</P>
+                        <a
+                            href="#"
+                            class="agregar-carrito btn-3"
+                            data-id="14"
+                        >Agregar al carrito</a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <div class="chatbox">
         <div class="chatbox__support">
             <div class="chatbox__header">
                 <div class="chatbox__image--header">
-                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                    <img
+                        src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png"
+                        alt="image"
+                    >
                 </div>
                 <div class="chatbox__content--header">
                     <h4 class="chatbox__heading--header">Cortana</h4>
-                    <p class="chatbox__description--header"> Cortana huila soporte al cliente en linea  </p>
+                    <p class="chatbox__description--header"> Cortana huila soporte al cliente en linea </p>
                 </div>
             </div>
             <div class="chatbox__messages">
                 <div></div>
             </div>
             <div class="chatbox__footer">
-                <input type="text" placeholder="Write a message...">
+                <input
+                    type="text"
+                    placeholder="Write a message..."
+                >
                 <button class="chatbox__send--footer send__button">Send</button>
             </div>
         </div>
@@ -252,16 +396,16 @@
             <button><img src="./images/chatbox-icon.svg" /></button>
         </div>
     </div>
-</div>
-
-    <script src="app.js"></script>
     <Footer class="footer-distributed">
         <div class="footer-left">
             <h3> Productos de aseo<span> F.M Huila s.a</span></h3>
             <p class="footer-links">
             <ul>
 
-                <li></li><a href="inicio.html" onclick="irInicio()">Inicio</a>
+                <li></li><a
+                    href="index.html"
+                    onclick="irInicio()"
+                >Inicio</a>
                 │
                 <a href="#">Nosotros</a>
                 │
@@ -303,6 +447,7 @@
             </div>
         </div>
     </Footer>
+    <script src="app.js"></script>
     <script src="script.js"></script>
 </body>
 
